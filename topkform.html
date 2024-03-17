@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cleaning Appointment Form</title>
+    <style>
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .checkbox-group {
+        display: flex;
+        flex-wrap: wrap;           
+    }
+
+    .checkbox-group label {
+        flex-basis: 50%;
+    }
+    .column1 {
+            float: left;
+            width: 30%;
+            padding: 10px;
+        }
+        .column2 {
+            float: left;
+            width: 30%;
+            padding: 10px;
+        }
+        .column3 {
+            float: left;
+            width: 30%;
+            padding: 10px;
+        }
+        .column4 {
+            float: left;
+            width: 16%;
+            padding: 10px;
+        }
+    </style>
+</head>
+    <body>
+        <h1>Cleaning Appointment Form</h1>
+        <form id="appointmentForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="area">Square Feet of Cleaning Area:</label>
+        <input type="number" id="area" required>
+        
+        <label for="services"><b><u>Cleaning Services Needed</u></b></label>
+            <div class="column1">
+                <label for="services"><b><u>Cleaning Services Needed</u></b></label>    
+                <form id="appointmentForm"></form>
+                <h3>Commercial Cleaning:</h3>
+                <label for="officeCleaning">Office Cleaning</label>
+                <input type="checkbox" id="officeCleaning" name="services" value="office cleaning">
+                <label for="clubHoseAndHalls">Club House And Halls</label>
+                <input type="checkbox" id="clubHoseAndHalls" name="services" value="club house and halls">
+                <label for="eateriesAndKitchens">Eateries And Kitchens</label>
+                <input type="checkbox" id="eateriesAndKitchens" name="services" value="eateries and kitchens">
+                <label for="initialCleanUp">Initial Clean Up</label>
+                <input type="checkbox" id="initialCleanUp" name="services" value="initial clean up">
+                <label for="deepCleaning">Deep Cleaning</label>
+                <input type="checkbox" id="deepCleaning" name="services" value="deep cleaning">
+                <label for="sparkleClean">Sparkle Clean</label>
+                <input type="checkbox" id="sparkleClean" name="services" value="sparkle clean">
+                <label for="washroomFloors">Washroom Floors</label>
+                <input type="checkbox" id="washroomFloors" name="services" value="washroom floors">
+                <label for="commonFloors">Common Floors</label>
+                <input type="checkbox" id="commonFloors" name="services" value="common floors">
+                <label for="courtyardCleaning">Courtyard Cleaning</label>
+                <input type="checkbox" id="courtyardCleaning" name="services" value="courtyard cleaning">
+                <label for="commonRestrooms">Common Restrooms</label>
+                <input type="checkbox" id="commonRestrooms" name="services" value="common restrooms">
+                <label for="trashCleanup">Trash Clean Up</label>
+                <input type="checkbox" id="trashCleanup" name="services" value="trash clean up">
+                <label for="containmentAreaCleaning">Containment Area Cleaning</label>
+                <input type="checkbox" id="containmentAreaCleaning" name="services" value="containment area cleaning">
+            </div>
+            <div class="column2">
+                <h3>Residential Cleaning:</h3>
+                <label for="moveInMoveOuts">Move In / Move Outs</label>
+                <input type="checkbox" id="moveInMoveOuts" name="services" value="move in move outs">
+                <label for="springCleaning">Spring Cleaning</label>
+                <input type="checkbox" id="springCleaning" name="services" value="spring cleaning">
+                <label for="junkRemoval">Junk Removal</label>
+                <input type="checkbox" id="junkRemoval" name="services" value="junk removal">
+                <label for="insideAndOut">Inside And Out</label>
+                <input type="checkbox" id="insideAndOut" name="services" value="inside and out">
+                <label for="kitchenAppliances">Kitchen Appliances</label>
+                <input type="checkbox" id="kitchenAppliances" name="services" value="kitchen appliances">
+                <label for="detailDusting">Detail Dusting</label>
+                <input type="checkbox" id="detailDusting" name="services" value="detail dusting">
+                <label for="oneTimeCleanings">One Time Cleanings</label>
+                <input type="checkbox" id="oneTimeCleanings" name="services" value="one time cleanings">
+                <label for="recurringCleanings">Recurring Cleanings</label>
+                <input type="checkbox" id="recurringCleanings" name="services" value="recurring cleanings">
+                <label for="commonAreaCleanings">Common Area Cleanings</label>
+                <input type="checkbox" id="commonAreaCleanings" name="services" value="common area cleanings">
+                <label for="bathroomFloors">Bathroom Floors</label>
+                <input type="checkbox" id="bathroomFloors" name="services" value="bathroom floors">
+                <label for="bathTubCleaning">Bath Tub Cleaning</label>
+                <input type="checkbox" id="bathTubCleaning" name="services" value="bath tub cleaning">
+                <label for="pipelineCleaning">Pipeline Cleaning</label>
+                <input type="checkbox" id="pipelineCleaning" name="services" value="pipeline cleaning">
+            </div>
+            <div class="column3">
+                <h3>Construction Cleaning:</h3>
+                <label for="debrisRemoval">Debris Removal</label> 
+                <input type="checkbox" id="debrisRemoval" name="services" value="debris removal">
+                <label for="dustRemoval">Dust Removal</label>
+                <input type="checkbox" id="dustRemoval" name="services" value="dust removal">
+                <label for="sweepingAndMopping">Sweeping And Mopping</label>
+                <input type="checkbox" id="sweepingAndMopping" name="services" value="sweeping and mopping">
+                <label for="wallCleaning">Wall Cleaning</label>
+                <input type="checkbox" id="wallCleaning" name="services" value="wall cleaning">
+                <label for="fixtureCleaning">Fixture Cleaning</label>
+                <input type="checkbox" id="fixtureCleaning" name="services" value="fixture cleaning">
+                <label for="floorCare">Floor Care</label>
+                <input type="checkbox" id="floorCare" name="services" value="floor care">
+            </div>
+            <div class="column4">
+                <label for="dateTime">Date and Time of Appointment:</label>
+                <input type="datetime-local" id="dateTime" required>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+        
+        <script>
+            document.getElementById("appointmentForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+        
+            // Get form values
+            var name = document.getElementById("name").value;
+            var phone = document.getElementById("phone").value;
+            var email = document.getElementById("email").value;
+            var area = document.getElementById("area").value;
+            var services = [];
+            var checkboxes = document.getElementsByName("services");
+            for (var i = 0; i < checkboxes.length; i++) {
+                if (checkboxes[i].checked) {
+                    services.push(checkboxes[i].value);
+                }
+            }
+            var dateTime = document.getElementById("dateTime").value;
+        
+            // Perform further processing or submit the form data to the server
+            // <!--submit the form data to the server-->
+            console.log(name, phone, email, area, services, dateTime);
+        
+            // Reset the form
+            document.getElementById("appointmentForm").reset();
+            });
+        </script>
+</body>
+</html>
