@@ -12,9 +12,9 @@ total_price = base_price_per_sqft * cleaning_area
 
 # Apply additional charges based on the cleaning services needed
 if "deep cleaning" in cleaning_services:
-    total_price += 50
+    total_price += 
 if "carpet cleaning" in cleaning_services:
-    total_price += 30
+    total_price += 
 if "office cleaning" in cleaning_services:
     total_price +=
 if "club house and halls" in cleaning_services:
@@ -38,11 +38,11 @@ if "trash clean up" in cleaning_services:
 if "containment area cleaning" in cleaning_services:
     total_price +=
 
-if "move in" || "move out" in cleaning_services:
+if "move in" or "move out" in cleaning_services:
     total_price +=
 if "kitchen appliances" in cleaning_services:
     total_price +=
-if "inside" || "outside in cleaning_services:
+if "inside" or "outside in cleaning_services:
     total_price +=
 if "spring cleaning" in cleaning_services:
     total_price +=
